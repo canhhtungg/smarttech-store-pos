@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #f4f6f9;
+  --bg-surface: #ffffff;
+  --bg-subtle: #eef2f7;
+  --ink-primary: #0f172a;
+  --ink-secondary: #475569;
+  --border-crisp: #cbd5e1;
+  --brand-navy: #14294b;
+}
+
+body {
+  font-family: "Be Vietnam Pro", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-canvas);
+  color: var(--ink-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono,
+code,
+pre,
+.tabular-nums {
+  font-family: "JetBrains Mono", "Cascadia Mono", Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only-receipt {
+    position: static !important;
+    width: 80mm !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}

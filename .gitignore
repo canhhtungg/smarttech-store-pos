@@ -1,0 +1,31 @@
+# Dependencies & Virtual Environments
+/node_modules
+/.venv
+/__pycache__
+*.pyc
+
+# Next.js build output
+/.next
+/out
+/build
+
+# Local SQLite database files
+/data/*.db
+/data/*.db-journal
+/data/*.db-wal
+/data/*.db-shm
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
+# Microsoft Word temporary lock files & OS files
+~$*.docx
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+next-env.d.ts
